@@ -1,0 +1,8 @@
+print()
+name = input("Your name: ")
+enemy = input("Your worst enemy's name: ")
+superPower = input("Your super power: ")
+print()
+print("Our story begins as our hero", name, "approaches a foreboding castle...")
+print("Suddely a bolt of lightning striked the ground at the feet of", name)
+print("'Our final battle begins!' shouts the evil", enemy, "clearly missing the fact that", name, "has the power of", superPower, "which means they'll win quite easily!")
