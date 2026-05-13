@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ultra Nails specialties in Greenville, SC. Luxury nail art, custom enhancements, lash extensions, and spa treatments." />
+<meta name="keywords" content="Ultra Nails specialties, nail art, custom nails, beauty treatments, lash extensions, waxing" />
+<meta property="og:title" content="Ultra Nails Specialties | Greenville, SC" />
+<meta property="og:description" content="Explore Ultra Nails specialty services and premium treatment experiences." />
+<meta property="og:image" content="https://ultranailsgvl.com/images/thumbnails.jpg" />
+<meta property="og:url" content="https://albaker03.github.io/Ultra-Nails/specialties.html" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Ultra Nails Specialties | Greenville, SC" />
+<meta name="twitter:description" content="Explore Ultra Nails specialty services and premium treatment experiences." />
+<meta name="theme-color" content="#0E0C0A" />
+<title>Ultra Nails | Specialties</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  :root { --cream: #F9F5F0; --cream-dark: #EFE8DD; --noir: #0E0C0A; --noir-soft: #1C1916; --rose: #C4876A; --rose-light: #E8C9B8; --rose-muted: #8C5E4A; --gold: #B8956A; --gold-light: #D4B896; --text-main: #1C1916; --text-muted: #6B5A4E; --text-light: #9E8A7D; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Jost', sans-serif; background: var(--cream); color: var(--text-main); overflow-x: hidden; }
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.25rem 3rem; background: rgba(249,245,240,0.92); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid rgba(196,135,106,0.15); transition: padding 0.3s; }
+  .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 400; letter-spacing: 0.06em; color: var(--noir); text-decoration: none; }
+  .nav-logo span { color: var(--rose); font-style: italic; }
+  .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+  .nav-links a { font-size: 0.75rem; font-weight: 400; letter-spacing: 0.18em; text-transform: uppercase; text-decoration: none; color: var(--text-muted); transition: color 0.2s; }
+  .nav-links a:hover { color: var(--rose); }
+  .nav-cta { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; text-decoration: none; padding: 0.65rem 1.6rem; background: var(--noir); color: var(--cream); border: 1px solid var(--noir); transition: all 0.25s; }
+  .nav-cta:hover { background: var(--rose); border-color: var(--rose); }
+  .nav-toggle { display: none; border: none; background: transparent; width: 42px; height: 42px; cursor: pointer; position: relative; z-index: 110; }
+  .nav-toggle span, .nav-toggle span::before, .nav-toggle span::after { display: block; position: absolute; width: 100%; height: 2px; background: var(--text-main); left: 0; transition: transform 0.25s ease, opacity 0.25s ease; }
+  .nav-toggle span { top: 50%; transform: translateY(-50%); }
+  .nav-toggle span::before { content: ''; top: -10px; }
+  .nav-toggle span::after { content: ''; top: 10px; }
+  .nav-toggle[aria-expanded="true"] span { background: transparent; }
+  .nav-toggle[aria-expanded="true"] span::before { transform: translateY(10px) rotate(45deg); }
+  .nav-toggle[aria-expanded="true"] span::after { transform: translateY(-10px) rotate(-45deg); }
+  .hero { min-height: 90vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 5rem; position: relative; overflow: hidden; }
+  .hero-left { display: flex; flex-direction: column; justify-content: center; padding: 5rem 3rem 5rem 3rem; position: relative; z-index: 2; }
+  .hero-eyebrow { font-size: 0.68rem; font-weight: 400; letter-spacing: 0.28em; text-transform: uppercase; color: var(--rose); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.75rem; }
+  .hero-eyebrow::before { content: ''; display: block; width: 2.5rem; height: 1px; background: var(--rose); }
+  .hero-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(3.5rem, 6vw, 5.5rem); font-weight: 300; line-height: 1.05; color: var(--noir); margin-bottom: 2rem; }
+  .hero-title em { font-style: italic; color: var(--rose); }
+  .hero-desc { font-size: 0.9rem; font-weight: 300; line-height: 1.9; color: var(--text-muted); max-width: 38ch; margin-bottom: 3rem; }
+  .hero-actions { display: flex; align-items: center; gap: 2rem; }
+  .btn-primary, .btn-ghost { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; text-decoration: none; display: inline-block; }
+  .btn-primary { padding: 1rem 2.5rem; background: var(--noir); color: var(--cream); border: 1px solid var(--noir); transition: all 0.25s; }
+  .btn-primary:hover { background: var(--rose); border-color: var(--rose); }
+  .btn-ghost { font-weight: 400; letter-spacing: 0.18em; color: var(--text-muted); display: flex; align-items: center; gap: 0.5rem; transition: color 0.2s; }
+  .btn-ghost::after { content: '→'; font-size: 1rem; }
+  .btn-ghost:hover { color: var(--rose); }
+  .hero-right { position: relative; overflow: hidden; background: var(--cream-dark); }
+  .hero-img-container { width: 100%; height: 100%; position: relative; }
+  .hero-img-container img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+  .hero-img-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(196,135,106,0.15) 0%, transparent 60%); }
+  .section { padding: 8rem 3rem; }
+  .section-header { margin-bottom: 5rem; }
+  .section-eyebrow { font-size: 0.68rem; font-weight: 400; letter-spacing: 0.28em; text-transform: uppercase; color: var(--rose); display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem; }
+  .section-eyebrow::before { content: ''; display: block; width: 2rem; height: 1px; background: var(--rose); }
+  .section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.5rem, 4vw, 3.8rem); font-weight: 300; line-height: 1.1; color: var(--noir); }
+  .section-title em { font-style: italic; color: var(--rose); }
+  .specialty-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+  .specialty-card { background: var(--cream-dark); padding: 2.5rem; border: 1px solid rgba(196,135,106,0.18); position: relative; overflow: hidden; }
+  .specialty-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.75rem; font-weight: 300; margin-bottom: 1rem; }
+  .specialty-card p { font-size: 0.95rem; line-height: 1.8; color: var(--text-muted); margin-bottom: 1.5rem; }
+  .specialty-card a { font-size: 0.75rem; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; text-decoration: none; color: var(--noir); border-bottom: 1px solid currentColor; }
+  .specialty-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 4rem; }
+  .specialty-image { position: relative; overflow: hidden; min-height: 280px; }
+  .specialty-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .booking { background: var(--cream); }
+  .booking-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: start; }
+  .info-item { padding: 1.5rem 0; border-bottom: 1px solid rgba(196,135,106,0.2); display: flex; flex-direction: column; gap: 0.3rem; }
+  .info-label { font-size: 0.65rem; font-weight: 400; letter-spacing: 0.2em; text-transform: uppercase; color: var(--rose); }
+  .info-value { font-size: 1rem; font-weight: 300; color: var(--text-main); line-height: 1.6; }
+  .info-value a { color: inherit; text-decoration: none; }
+  .info-value a:hover { color: var(--rose); }
+  .booking-form-wrap { background: var(--noir); padding: 3rem; }
+  .form-title { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 300; color: var(--cream); margin-bottom: 0.5rem; }
+  .form-subtitle { font-size: 0.78rem; font-weight: 300; color: rgba(249,245,240,0.5); margin-bottom: 2.5rem; letter-spacing: 0.05em; }
+  .form-group { margin-bottom: 1.25rem; }
+  .form-group label { display: block; font-size: 0.63rem; font-weight: 400; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(249,245,240,0.5); margin-bottom: 0.5rem; }
+  .form-group input, .form-group select, .form-group textarea { width: 100%; background: rgba(255,255,255,0.05); border: 1px solid rgba(249,245,240,0.12); color: var(--cream); padding: 0.85rem 1rem; font-family: 'Jost', sans-serif; font-size: 0.88rem; font-weight: 300; outline: none; transition: border-color 0.2s; -webkit-appearance: none; appearance: none; border-radius: 0; }
+  .form-group input::placeholder { color: rgba(249,245,240,0.25); }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--rose); }
+  .form-group select option { background: var(--noir-soft); }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .form-submit { width: 100%; margin-top: 1rem; padding: 1rem; background: var(--rose); border: none; color: var(--cream); font-family: 'Jost', sans-serif; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; cursor: pointer; transition: background 0.25s; border-radius: 0; }
+  .form-submit:hover { background: var(--rose-muted); }
+  footer { background: var(--noir-soft); padding: 5rem 3rem 2.5rem; color: var(--cream); }
+  .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 4rem; padding-bottom: 4rem; border-bottom: 1px solid rgba(249,245,240,0.08); }
+  .footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 300; color: var(--cream); margin-bottom: 1rem; display: block; text-decoration: none; }
+  .footer-logo span { color: var(--rose); font-style: italic; }
+  .footer-tagline { font-size: 0.8rem; font-weight: 300; line-height: 1.9; color: rgba(249,245,240,0.45); max-width: 28ch; }
+  .footer-col-title { font-size: 0.63rem; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(249,245,240,0.35); margin-bottom: 1.5rem; }
+  .footer-links { list-style: none; display: flex; flex-direction: column; gap: 0.8rem; }
+  .footer-links a { font-size: 0.85rem; font-weight: 300; color: rgba(249,245,240,0.6); text-decoration: none; transition: color 0.2s; }
+  .footer-links a:hover { color: var(--rose); }
+  .footer-social { display: flex; gap: 1rem; margin-top: 1.5rem; }
+  .social-link { width: 38px; height: 38px; border: 1px solid rgba(249,245,240,0.15); display: flex; align-items: center; justify-content: center; text-decoration: none; color: rgba(249,245,240,0.6); font-size: 0.7rem; font-weight: 400; letter-spacing: 0.05em; transition: all 0.2s; }
+  .social-link:hover { border-color: var(--rose); color: var(--rose); }
+  .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 2rem; }
+  .footer-copy { font-size: 0.75rem; font-weight: 300; color: rgba(249,245,240,0.3); letter-spacing: 0.05em; }
+  .footer-credit { font-size: 0.72rem; color: rgba(249,245,240,0.2); font-weight: 300; letter-spacing: 0.04em; }
+  .footer-credit span { color: var(--rose); }
+  .hours-open { color: #6DBF82; }
+  .info-value--hours { font-size: 0.85rem; line-height: 2.1; }
+  .mobile-nav { position: fixed; inset: 0; background: rgba(14,12,10,0.96); color: var(--cream); padding: 6rem 2rem 2rem; display: none; flex-direction: column; gap: 2rem; z-index: 105; }
+  .mobile-nav.open { display: flex; }
+  .mobile-nav-links { list-style: none; display: flex; flex-direction: column; gap: 1.5rem; }
+  .mobile-nav-links a { color: var(--cream); text-decoration: none; font-size: 1.05rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 400; }
+  .mobile-nav-cta { display: inline-block; padding: 1rem 1.75rem; background: var(--rose); color: var(--cream); border: 1px solid var(--rose); text-decoration: none; font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase; transition: background 0.25s; }
+  .mobile-nav-cta:hover { background: var(--gold); }
+  body.menu-open { overflow: hidden; }
+  .form-status { margin-top: 1rem; font-size: 0.8rem; color: rgba(249,245,240,0.75); min-height: 1.2rem; }
+  .form-back-btn { display: inline-block; margin-top: 1.5rem; padding: 0.75rem 1.5rem; background: rgba(249,245,240,0.08); border: 1px solid rgba(249,245,240,0.2); color: var(--rose); text-decoration: none; font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; font-weight: 500; transition: all 0.25s; }
+  .form-back-btn:hover { background: var(--rose); color: var(--cream); border-color: var(--rose); }
+  .fade-up { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .fade-up.visible { opacity: 1; transform: translateY(0); }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .fade-up { transition: none !important; transform: none !important; opacity: 1 !important; } }
+  @media (max-width: 1024px) { .footer-top { grid-template-columns: 1fr 1fr; gap: 2.5rem; } }
+  @media (max-width: 900px) { nav { padding: 1rem 1.5rem; } .nav-links { display: none; } .nav-toggle { display: block; } .hero { grid-template-columns: 1fr; } .hero-right { min-height: 55vh; } .hero-left { padding: 4rem 1.5rem 3rem; } .section { padding: 5rem 1.5rem; } .specialty-grid { grid-template-columns: 1fr; } .booking-inner { grid-template-columns: 1fr; gap: 3rem; } .form-row { grid-template-columns: 1fr; } .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; } .footer-bottom { flex-direction: column; gap: 0.75rem; text-align: center; } }
+  @media (max-width: 540px) { .form-back-btn { display: block; width: 100%; text-align: center; } .hero-title { font-size: 2.8rem; } .hero-left { padding: 3rem 1.25rem 2.5rem; } .section { padding: 4rem 1.25rem; } .specialty-gallery { grid-template-columns: 1fr; } .booking-form-wrap { padding: 2rem 1.25rem; } footer { padding: 3.5rem 1.25rem 2rem; } nav { padding: 1rem 1.25rem; } }
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo">Ultra <span>Nails</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#gallery">Gallery</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+  <a href="http://booking.galaxyaccess.us/ultra3280" target="_blank" rel="noreferrer noopener" class="nav-cta">Book Now</a>
+  <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu"><span></span></button>
+  <div class="mobile-nav" id="mobile-menu" aria-hidden="true">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#gallery">Gallery</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <a href="http://booking.galaxyaccess.us/ultra3280" target="_blank" rel="noreferrer noopener" class="mobile-nav-cta">Book Now</a>
+  </div>
+</nav>
+<main>
+  <section class="hero">
+    <div class="hero-left fade-up visible">
+      <p class="hero-eyebrow">Greenville, SC · Specialties</p>
+      <h1 class="hero-title">Signature<br><em>treatments</em><br>reimagined.</h1>
+      <p class="hero-desc">Explore our specialty experiences, from bespoke nail art to luxury lash and waxing treatments. Every service is designed to feel polished, personal, and premium.</p>
+      <div class="hero-actions">
+        <a href="http://booking.galaxyaccess.us/ultra3280" target="_blank" rel="noreferrer noopener" class="btn-primary">Book Now</a>
+        <a href="#specialties" class="btn-ghost">View Specialties</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-img-container">
+        <img src="https://ultranailsgvl.com/images/thumbnails.jpg" alt="Ultra Nails specialty services in Greenville SC">
+        <div class="hero-img-overlay"></div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="specialties">
+    <div class="section-header fade-up">
+      <p class="section-eyebrow">Specialty Experiences</p>
+      <h2 class="section-title">Exceptional <em>Care</em></h2>
+    </div>
+    <div class="specialty-grid fade-up">
+      <div class="specialty-card">
+        <h3>Custom Nail Art</h3>
+        <p>Hand-painted designs, foil accents, and editorial finishes crafted to match your personal style and occasion.</p>
+        <a href="services.html#nail-enhance">View Nails →</a>
+      </div>
+      <div class="specialty-card">
+        <h3>Premium Enhancements</h3>
+        <p>Long-lasting acrylics, dip powder, and hybrid techniques for strength, shape, and high-impact polish.</p>
+        <a href="services.html#nail-enhance">View Enhancements →</a>
+      </div>
+      <div class="specialty-card">
+        <h3>Lashes & Brows</h3>
+        <p>Lifted lashes, extensions, and brow shaping that frame the face and streamline your everyday beauty routine.</p>
+        <a href="services.html#eyelash">View Lashes →</a>
+      </div>
+      <div class="specialty-card">
+        <h3>Luxury Waxing</h3>
+        <p>Gentle waxing services for smooth, confident results with premium care and soothing aftercare.</p>
+        <a href="services.html#wax">View Waxing →</a>
+      </div>
+      <div class="specialty-card">
+        <h3>Salon Retreat</h3>
+        <p>Relaxing add-ons, aromatherapy, and calming finishes that make every visit feel like a wellness moment.</p>
+        <a href="index.html#contact">Contact Us →</a>
+      </div>
+      <div class="specialty-card">
+        <h3>Mini Spa Service</h3>
+        <p>Quick refresh treatments perfect for the busy guest who wants polish and pampering in one visit.</p>
+        <a href="index.html#contact">Book a Visit →</a>
+      </div>
+    </div>
+    <div class="specialty-gallery fade-up">
+      <div class="specialty-image"><img src="https://ultranailsgvl.com/images/specialties-07.jpg" alt="Custom nail art at Ultra Nails" loading="lazy"></div>
+      <div class="specialty-image"><img src="https://ultranailsgvl.com/images/specialties-08.jpg" alt="Luxury nail enhancements" loading="lazy"></div>
+      <div class="specialty-image"><img src="https://ultranailsgvl.com/images/specialties-09.jpg" alt="Ultra Nails pedicure specialty" loading="lazy"></div>
+      <div class="specialty-image"><img src="https://ultranailsgvl.com/images/specialties-04.jpg" alt="Specialty lash services" loading="lazy"></div>
+    </div>
+  </section>
+  <section class="section booking" id="contact">
+    <div class="booking-inner">
+      <div class="booking-info fade-up">
+        <p class="section-eyebrow">Visit Us</p>
+        <h2 class="section-title">Plan your <em>visit</em></h2>
+        <div class="info-item">
+          <span class="info-label">Address</span>
+          <span class="info-value"><a href="https://maps.app.goo.gl/p9GPdQcrDMXfSKvw6" target="_blank" rel="noreferrer noopener">3280 N Pleasantburg Dr A<br>Greenville, SC 29609</a></span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Phone</span>
+          <span class="info-value"><a href="tel:+18642716989">(864) 271-6989</a></span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Email</span>
+          <span class="info-value"><a href="mailto:UltraNails26@gmail.com">UltraNails26@gmail.com</a></span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Hours</span>
+          <span class="info-value info-value--hours">Mon – Sat · <span class="hours-open">9:30 AM – 7:30 PM</span><br>Sunday · <span class="hours-open">11:00 AM – 6:00 PM</span></span>
+        </div>
+      </div>
+      <div class="booking-form-wrap fade-up">
+        <h3 class="form-title">Request an Appointment</h3>
+        <p class="form-subtitle">We'll confirm your booking within 24 hours.</p>
+        <form id="appointmentForm" action="https://formsubmit.co/UltraNails26@gmail.com" method="POST" onsubmit="handleSubmit(event)">
+          <input type="hidden" name="_subject" value="New appointment request from Ultra Nails site">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="specialties.html#contact">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="(864) 000-0000">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@email.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="service">Service</label>
+            <select id="service" name="service" required>
+              <option value="">Select a service…</option>
+              <option value="manicure">Manicure</option>
+              <option value="pedicure">Pedicure</option>
+              <option value="nail-enhancements">Nail Enhancements</option>
+              <option value="eyelash">Eyelash Extensions</option>
+              <option value="waxing">Waxing</option>
+              <option value="kids">Kid's Menu</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Preferred Date</label>
+              <input type="date" id="date" name="date">
+            </div>
+            <div class="form-group">
+              <label for="time">Preferred Time</label>
+              <select id="time" name="time">
+                <option value="morning">Morning</option>
+                <option value="afternoon">Afternoon</option>
+                <option value="evening">Evening</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="form-submit">Request Appointment →</button>
+          <p id="formStatus" class="form-status" aria-live="polite"></p>
+          <a href="index.html" class="form-back-btn">← Back to Home</a>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo">Ultra <span>Nails</span></a>
+      <p class="footer-tagline">Premier nail and spa services in the heart of Greenville, South Carolina. Beauty, elevated.</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/ultranailsgvl" target="_blank" rel="noreferrer noopener" class="social-link" aria-label="Facebook">FB</a>
+        <a href="https://www.instagram.com/ultranailsgvl" target="_blank" rel="noreferrer noopener" class="social-link" aria-label="Instagram">IG</a>
+        <a href="https://maps.app.goo.gl/p9GPdQcrDMXfSKvw6" target="_blank" rel="noreferrer noopener" class="social-link" aria-label="Maps">↗</a>
+      </div>
+    </div>
+    <div>
+      <p class="footer-col-title">Navigate</p>
+      <ul class="footer-links">
+        <li><a href="index.html#about">About Us</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="specialties.html">Specialties</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title">Services</p>
+      <ul class="footer-links">
+        <li><a href="services.html#manicure">Manicures</a></li>
+        <li><a href="services.html#pedicure">Pedicures</a></li>
+        <li><a href="services.html#nail-enhance">Nail Enhancements</a></li>
+        <li><a href="services.html#eyelash">Eyelash Extensions</a></li>
+        <li><a href="services.html#wax">Waxing</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title">Contact</p>
+      <ul class="footer-links">
+        <li><a href="tel:+18642716989">(864) 271-6989</a></li>
+        <li><a href="mailto:UltraNailsSC@gmail.com">UltraNailsSC@gmail.com</a></li>
+        <li><a href="https://maps.app.goo.gl/p9GPdQcrDMXfSKvw6" target="_blank" rel="noreferrer noopener">3280 N Pleasantburg Dr A<br>Greenville, SC 29609</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2025 Ultra Nails · All rights reserved</p>
+    <p class="footer-credit">Redesigned by <span>DDAB Enterprise</span></p>
+  </div>
+</footer>
+<script>
+  const observer = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } }); }, { threshold: 0.12 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  const navToggle = document.querySelector('.nav-toggle'); const mobileNav = document.getElementById('mobile-menu'); const bodyEl = document.body;
+  function setMobileMenu(open) { const isOpen = Boolean(open); navToggle?.setAttribute('aria-expanded', String(isOpen)); mobileNav?.setAttribute('aria-hidden', String(!isOpen)); if (isOpen) { mobileNav?.classList.add('open'); bodyEl.classList.add('menu-open'); } else { mobileNav?.classList.remove('open'); bodyEl.classList.remove('menu-open'); } }
+  navToggle?.addEventListener('click', () => { const shouldOpen = navToggle.getAttribute('aria-expanded') !== 'true'; setMobileMenu(shouldOpen); });
+  mobileNav?.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setMobileMenu(false)));
+  const nav = document.querySelector('nav'); window.addEventListener('scroll', () => { if (window.scrollY > 60) { nav.style.padding = '0.85rem 3rem'; } else { nav.style.padding = '1.25rem 3rem'; } }, { passive: true });
+  function handleSubmit(e) { e.preventDefault(); const btn = e.target.querySelector('.form-submit'); const status = document.getElementById('formStatus'); btn.textContent = 'Sending…'; btn.style.background = '#6B5A4E'; status.textContent = 'Submitting your request...'; setTimeout(() => { btn.textContent = 'Request Sent ✓'; btn.style.background = '#4A8C5C'; status.textContent = 'Thanks! We will confirm your booking within 24 hours.'; e.target.reset(); setTimeout(() => { btn.textContent = 'Request Appointment →'; btn.style.background = ''; status.textContent = ''; }, 3500); }, 1000); }
+  const dateInput = document.getElementById('date'); if (dateInput) { const today = new Date().toISOString().split('T')[0]; dateInput.setAttribute('min', today); }
+</script>
+</body>
+</html>
